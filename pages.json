@@ -1,0 +1,390 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path" : "pages/logon/logon",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
+			}
+			
+		},
+		{
+			"path" : "pages/logon/forgotPass",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
+			}
+			 
+		},
+		{
+			"path" : "pages/logon/register",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
+			}
+			
+		},
+		{
+			"path" : "pages/index/index",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"pageOrientation": "landscape"
+			}
+			
+		}
+	    ,{
+            "path" : "pages/books/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "书本引导",
+               "navigationStyle": "custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/books/learnWords",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+               "navigationStyle": "custom",
+               "pageOrientation": "landscape"
+            }
+            
+        }
+        ,{
+            "path" : "pages/books/pictureHear",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+               "navigationStyle": "custom",
+               "pageOrientation": "landscape"
+            }
+            
+        },{
+            "path" : "pages/books/pictureRead",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+               "navigationStyle": "custom",
+               "pageOrientation": "landscape"
+            }
+            
+        },{
+            "path" : "pages/books/letter/letter",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+               "navigationStyle": "custom",
+               "pageOrientation": "landscape"
+            }
+            
+        }
+        ,{
+            "path" : "pages/books/gradation/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+               "navigationStyle": "custom",
+               "pageOrientation": "landscape"
+            }
+            
+        }
+        ,{
+            "path" : "pages/books/periodical/periodical",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+               "navigationStyle": "custom",
+               "pageOrientation": "landscape"
+            }
+            
+        }
+        ,{
+            "path" : "pages/books/spelling/spelling",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+              "navigationStyle": "custom",
+              "pageOrientation": "landscape"
+            }
+            
+        }
+        ,{
+            "path" : "pages/books/libraryRush",
+            "style" :                                                                                    
+           {
+               "navigationBarTitleText": "",
+             "navigationStyle": "custom",
+             "pageOrientation": "landscape"
+           }
+            
+        }
+        ,{
+            "path" : "pages/books/periodical/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+               "navigationStyle": "custom",
+               "pageOrientation": "landscape"
+            }
+            
+        }
+        ,{
+            "path" : "pages/books/eargrinding/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "navigationStyle": "custom",
+                "pageOrientation": "landscape"
+            }
+            
+        }
+        ,{
+            "path" : "pages/checkout/cinema/cinema",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+               "navigationStyle": "custom",
+               "pageOrientation": "landscape"
+            }
+            
+        }
+        ,{
+            "path" : "pages/checkout/cinema/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+               "navigationStyle": "custom",
+               "pageOrientation": "landscape"
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+               "navigationStyle": "custom",
+               "pageOrientation": "landscape"
+            }
+            
+        },
+		{
+		    "path" : "pages/user/userName",
+		    "style" :                                                                                    
+		    {
+		      "navigationBarTitleText": "",
+		      "navigationStyle": "custom",
+		      "pageOrientation": "landscape"
+		    }
+		    
+		},
+		{
+		    "path" : "pages/user/learnDetails",
+		    "style" :                                                                                    
+		    {
+		      "navigationBarTitleText": "",
+		      "navigationStyle": "custom",
+		      "pageOrientation": "landscape"
+		    }
+		    
+		},
+		{
+		    "path" : "pages/user/testReport",
+		    "style" :                                                                                    
+		    {
+		      "navigationBarTitleText": "",
+		      "navigationStyle": "custom",
+		      "pageOrientation": "landscape"
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/checkout/exam/exam",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+               "navigationStyle": "custom",
+               "pageOrientation": "landscape"
+            }
+            
+        }
+        ,{
+            "path" : "pages/checkout/exam/rankReport",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+               "navigationStyle": "custom",
+               "pageOrientation": "landscape"
+            }
+            
+        }
+        ,{
+            "path" : "pages/checkout/readDemo/readDemo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "navigationStyle": "custom"
+                // "pageOrientation": "landscape"
+            }
+            
+        }
+        ,{
+            "path" : "pages/books/spelling/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+               "navigationStyle": "custom",
+               "pageOrientation": "landscape"
+            }
+            
+        },
+		{
+		    "path" : "pages/books/spelling/phonicRoll",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		       "navigationStyle": "custom",
+		       "pageOrientation": "landscape"
+		    }
+		    
+		},
+		{
+		    "path" : "pages/books/spelling/phonic",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		       "navigationStyle": "custom",
+		       "pageOrientation": "landscape"
+		    }
+		    
+		}
+		
+        ,{
+            "path" : "pages/checkout/clockIn/clockIn",
+            "style" :                                                                                    
+            {
+              "navigationBarTitleText": "",
+              "navigationStyle": "custom",
+              "pageOrientation": "landscape"
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/feedBack",
+            "style" :                                                                                    
+            {
+               "navigationBarTitleText": "",
+               "navigationStyle": "custom",
+               "pageOrientation": "landscape"
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/askQuestion",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "navigationStyle": "custom",
+                "pageOrientation": "landscape"
+            }
+            
+        }
+        ,{
+            "path" : "pages/checkout/purchasePlan/purchasePlan",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"pageOrientation": "portrait"
+            }
+            
+        }
+        ,{
+            "path" : "pages/books/letter/letterA",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+               "navigationStyle": "custom",
+               "pageOrientation": "landscape"
+            }
+            
+        }
+        ,{
+            "path" : "pages/checkout/purchasePlan/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+               "navigationStyle": "custom",
+               "pageOrientation": "portrait"
+            }
+            
+        }
+        ,{
+            "path" : "pages/books/letter/letterB",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "navigationStyle": "custom",
+                "pageOrientation": "portrait"
+            }
+            
+        }
+        ,{
+            "path" : "pages/books/letter/letterC",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "navigationStyle": "custom",
+                "pageOrientation": "portrait"
+            }
+            
+        }
+        ,{
+            "path" : "pages/books/letter/letterD",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "navigationStyle": "custom",
+                "pageOrientation": "portrait"
+            }
+            
+        },
+		{
+		    "path" : "pages/books/letter/letterE",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "navigationStyle": "custom",
+		        "pageOrientation": "portrait"
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/books/letter/letterF",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "navigationStyle": "custom",
+                "pageOrientation": "portrait"
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"rpxCalcMaxDeviceWidth": 2000, // rpx 计算所支持的最大设备宽度，单位 px，默认值为 960
+		"rpxCalcBaseDeviceWidth": 375, // rpx 计算使用的基准设备宽度，设备实际宽度超出 rpx 计算所支持的最大设备宽度时将按基准宽度计算，单位 px，默认值为 375
+		"rpxCalcIncludeWidth": 750 // rpx 计算特殊处理的值，始终按实际的设备宽度计算，单位 rpx，默认值为 750
+		// "pageOrientation": "portrait"
+	},
+	"uniIdRouter": {}
+}
