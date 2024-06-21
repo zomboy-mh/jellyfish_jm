@@ -17,4 +17,6 @@
 	@import 'assets/css/main.css';
 	@import 'assets/css/more.less';
 	@import 'assets/css/icon.css';
+	@import 'assets/css/letter.css';
+	@import './static/stylesheet.css'
 </style>

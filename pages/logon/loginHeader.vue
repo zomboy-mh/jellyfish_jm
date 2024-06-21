@@ -52,8 +52,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  @import "../../assets/css/variable";
-  @import "../../assets/css/mixin";
+
   .header{
     width: 100%;
     height: 60px;
@@ -92,7 +91,6 @@ export default {
       font-weight: bold;
       font-size: 22px;
       //@include font_size($font_large);
-      @include no-wrap()
     }
   }
 </style>

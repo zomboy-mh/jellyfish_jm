@@ -1,5 +1,5 @@
 <template>
-  <div class="detail">
+  <view class="detail">
 	  <view class="login_top">
 	    <image class="login_top_img" src="../../assets/images/login_top.png" alt="">
 	    <image class="login_top_img_up" :src="imageUrl + 'login_top_up1.png'" alt="">
@@ -37,7 +37,7 @@
 	     注册账号
 	    </view>
 	  </view>
-  </div>
+  </view>
 </template>
 
 <script>
@@ -132,9 +132,7 @@
 </script>
 
 <style scoped lang="scss">
-  @import "../../assets/css/variable";
-  @import "../../assets/css/mixin";
-  @import "../../assets/css/main";
+
   .detail {
     position: fixed;
     top: 0;
@@ -341,8 +339,6 @@
         .phonueft {
           height: 100rpx;
           line-height: 100rpx;
-          /*width: 50px;*/
-          @include font_size($font_medium);
           text-align: center;
           color: #000000;
         }

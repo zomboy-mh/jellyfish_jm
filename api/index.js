@@ -83,6 +83,9 @@ export const getPhonicsList = (data) => apiResquest('/phonics/getPhonicsList',da
 export const getPhonicsDetail = (data) => apiResquest('/phonics/getPhonicsDetail',data)
 //获取自然拼读产品内容
 export const getPhonicsPrdList = (data) => apiResquest('/phonics/getPhonicsPrdList',data)
+export const getPrdListByPrdId = (data) => apiResquest('/phonics/getPrdListByPrdId',data)
+//获取字母启蒙
+export const getWordCard = (data) => apiResquest('/rdmstWordcard/getWordCard',data)
 
 
 

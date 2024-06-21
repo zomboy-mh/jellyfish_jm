@@ -1,5 +1,8 @@
 <template>
 	<view class="content">
+		<view class="loading" v-if="loading">
+			<image class="loading_img" :src="imageUrl + 'loading.gif'" mode=""></image>
+		</view>
 		<view class="head">
 			<view class="green_back display-flex" @tap="jump()">
 				<image class="green_back_img" :src="imageUrl + 'green_back.png'" mode=""></image>
@@ -60,7 +63,7 @@
 					</view>
 				</view>
 				<swiper v-if="chooseLevel == 2"  class="swiper" :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval"
-						:duration="duration" :display-multiple-items="19" :current="swiperCurrent"  @change="swiperChange">
+						:duration="duration" :display-multiple-items="19" :current="swiperCurrent"  >
 					<swiper-item v-for="(item,index) in tableList" :key='index' @click="CurrentTap(item,index)">
 						<view class="swiper-item">
 							
@@ -76,14 +79,20 @@
 				</swiper>
 				
 			</view>
-			<view class="library_box">
-				<view class="library_item" v-for="(item,index) in bookList" :key='index' @click="jumpBook(item.bookId)">
+			<view class="book_back display-flex" @tap="backBook()">
+				<image class="green_back_img" :src="imageUrl + 'guide_left.png'" mode="aspectFit"></image>
+			</view>
+			<view class="book_back2 display-flex" @tap="addBook()">
+				<image class="green_back_img" :src="imageUrl + 'guide_left.png'" mode="aspectFit"></image>
+			</view>
+			<view class="library_box" >
+				<view  class="library_item" v-for="(item,index) in bookList" :key='index' @click="jumpBook(item.bookId)">
 					<view class="library_book" :style="{'border-color':currentStyle}">
-						<!-- <u-lazy-load :image="image" :loading-img="loadingImg" :error-img="errorImg"></u-lazy-load> -->
 						
 						<u-image width="96rpx" height="96rpx" border-radius="5rpx"  :src="formalUrl + item.bookLogo" :lazy-load="true">
 							
 						</u-image>
+					
 							<image v-if="item.isFree == 1" class="book_tip" :src="imageUrl +'library_free.png'" mode=""></image>
 							<image v-else class="book_tip" :src="imageUrl +'library_vip.png'" mode=""></image>
 							<view v-if="item.isPay == 1 " class="book_state font-12" :style="{'background':currentStyle}">
@@ -98,7 +107,7 @@
 						<view class="book_level font-12" :style="{'background':currentStyle}">{{item.bookLevel}}</view>
 						<view class="font-9">Lexile {{item.bookEslplevel}}</view>
 					</view>
-					<!-- <view class="book_name font-14">{{item.bookName}}</view> -->
+					
 					<view :class="item.bookName.length>13?'book_name':'book_name1'">
 						{{item.bookName}}
 					</view>
@@ -311,7 +320,8 @@
 				bookListDto:{},
 				bookType:'',
 				bookTypeTxt:'',
-				typeItemIf:false
+				typeItemIf:false,
+				loading:true
 			};
 		},
 		onLoad() {
@@ -329,12 +339,16 @@
 				getAZListItem({
 					
 				}).then((res)=>{
+					
 					this.typRange = res.data.bookSerachList;
 					this.gradeList = res.data.gradeList;
 					this.lexileList = res.data.lexileList;
 					this.gradeRangeLeft = this.gradeList;
 					this.gradeRangeRight = this.gradeList;
+					this.bookListDto.pageIndex = 0;
+					this.bookListDto.pagesize = 12;
 					this.getBookListUl()
+					
 				})
 			},
 			changeLevel(e){
@@ -360,22 +374,30 @@
 					this.bookListDto.type = 'LEXILE_RANGE';
 				}else if(e == 2){
 					this.bookListDto.type = 'Learning A-Z'; 
+					this.bookListDto.pageIndex = 0;
+					this.bookListDto.pagesize = 12;
 				}
 				this.getBookListUl()
 			},
 			 changeType(e) {
 				 this.bookListDto.bookType = e;
 				 this.bookType = e;
+				 this.bookListDto.pageIndex = 0;
+				 this.bookListDto.pagesize = 12;
 				 this.getBookListUl()
 			},
 			changeRangeLeft(e){
 				this.bookListDto.typeStart = e;
 				let data = this.gradeRangeLeft
 				this.gradeRangeRight = data.slice(e);
+				this.bookListDto.pageIndex = 0;
+				this.bookListDto.pagesize = 12;
 				this.getBookListUl()
 			},
 			changeRangeRight(e){
 				this.bookListDto.typeEnd = e;
+				this.bookListDto.pageIndex = 0;
+				this.bookListDto.pagesize = 12;
 				this.getBookListUl()
 			},
 			clearList(){
@@ -389,13 +411,36 @@
 				this.bookTypeTxt = '';
 				this.typeItemIf = false
 			},
-			getBookListUl(){
-				console.log("搜索条件",this.bookListDto)
+			addBook(){
+				this.bookListDto.pageIndex = this.bookListDto.pageIndex + 1;
+				this.bookListDto.pagesize = 12;
 				getBookList(this.bookListDto).then((res)=>{
-					console.log("搜索结果",res)
-					this.bookList = res.data
+					this.bookList = res.data.bookListVos;
+					this.loading = false
+				})
+			},
+			backBook(){
+				if(this.bookListDto.pageIndex>0){
+					this.bookListDto.pageIndex = this.bookListDto.pageIndex - 1;
+					this.bookListDto.pagesize = 12;
+					getBookList(this.bookListDto).then((res)=>{
+						this.bookList = res.data.bookListVos;
+						this.loading = false
+					})
+				}
+				
+			},
+			getBookListUl(){
+				
+				getBookList(this.bookListDto).then((res)=>{
+					this.bookList = res.data.bookListVos;
+					this.loading = false
 				})
 				
+			},
+			swiperChange(val) {
+				this.swiperCurrent = val.detail.current;
+				console.log("sss",this.swiperCurrent)
 			},
 			getBookListUlTxt(){
 				getBookList({
@@ -414,6 +459,8 @@
 			CurrentTap(item,index){
 				console.log("分级",item)
 				this.bookListDto.bookLevel = item.id;
+				this.bookListDto.pageIndex = 0;
+				this.bookListDto.pagesize = 12;
 				this.getBookListUl()
 				if(index < 18 && index > 8){
 					this.swiperCurrent = index - 8
@@ -578,7 +625,7 @@
 			top: 20%;
 			width: 100%;
 			height: 80%;
-			overflow: auto;
+			// overflow: auto;
 			background: linear-gradient(0deg, #B0F8D7 0%, #FBFFFD 100%);
 			.type{
 				width: 100%;
@@ -622,11 +669,30 @@
 				}
 			}
 			}
+			.book_back{
+				position: absolute;
+				left: 0;
+				top: 40%;
+				width: 5%;
+				height: 100%;
+				z-index: 999;
+			}
+			.book_back2{
+				position: absolute;
+				right: 0;
+				top: 40%;
+				width: 5%;
+				height: 100%;
+				z-index: 999;
+				transform: scaleX(-1);
+				// transform: rotateZ(90deg);
+			}
 			.library_box{
-				margin-left: 5%;
+				margin-left: 4%;
 				width: 90%;
 				overflow: auto;
-				padding-left: 10rpx;
+				// overflow: auto;
+				// padding-left: 10rpx;
 				padding-bottom: 60rpx;
 				display: flex;
 				justify-content: flex-start;
@@ -733,13 +799,7 @@
 							word-break: break-all;
 						}
 					}
-					// .book_name{
-					// 	margin-top: 8rpx;
-					// 	width: 100%;
-					// 	height: 20rpx;
-					// 	text-align: center;
-					// 	line-height: 10rpx;
-					// }
+					
 				}
 				
 			}

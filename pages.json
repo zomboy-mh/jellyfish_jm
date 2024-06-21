@@ -306,16 +306,6 @@
             
         }
         ,{
-            "path" : "pages/books/letter/letterA",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-               "navigationStyle": "custom",
-               "pageOrientation": "landscape"
-            }
-            
-        }
-        ,{
             "path" : "pages/checkout/purchasePlan/index",
             "style" :                                                                                    
             {
@@ -324,62 +314,76 @@
                "pageOrientation": "portrait"
             }
             
-        }
-        ,{
-            "path" : "pages/books/letter/letterB",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "navigationStyle": "custom",
-                "pageOrientation": "portrait"
-            }
-            
-        }
-        ,{
-            "path" : "pages/books/letter/letterC",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "navigationStyle": "custom",
-                "pageOrientation": "portrait"
-            }
-            
-        }
-        ,{
-            "path" : "pages/books/letter/letterD",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "navigationStyle": "custom",
-                "pageOrientation": "portrait"
-            }
-            
         },
 		{
-		    "path" : "pages/books/letter/letterE",
-		    "style" :                                                                                    
-		    {
-		        "navigationBarTitleText": "",
-		        "navigationStyle": "custom",
-		        "pageOrientation": "portrait"
-		    }
-		    
+			"path" : "pages/books/letter/letterDetail",
+			"style" : 
+			{
+			    "navigationBarTitleText": "",
+			    "navigationStyle": "custom",
+			    "pageOrientation": "portrait"
+			}
+		},
+		{
+			"path" : "pages/books/letter/letterWrite",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"navigationStyle": "custom",
+				"pageOrientation": "portrait"
+			}
+		},
+		{
+			"path" : "pages/books/letter/letterBookIndex",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"navigationStyle": "custom",
+				"pageOrientation": "portrait"
+			}
+		},
+		{
+			"path" : "pages/books/letter/phonicRoll",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"navigationStyle": "custom",
+				"pageOrientation": "portrait"
+			}
+		},
+		{
+			"path" : "pages/books/letter/phonic",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"navigationStyle": "custom",
+				"pageOrientation": "portrait"
+			}
+		},
+		{
+			"path" : "pages/books/letter/letterName",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"navigationStyle": "custom",
+				"pageOrientation": "portrait"
+			}
+		},
+		{
+			"path" : "pages/books/letter/letterVideoIndex",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"navigationStyle": "custom",
+				"pageOrientation": "portrait"
+			}
 		}
-        ,{
-            "path" : "pages/books/letter/letterF",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "navigationStyle": "custom",
-                "pageOrientation": "portrait"
-            }
-            
-        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
+		
 		"backgroundColor": "#F8F8F8",
 		"rpxCalcMaxDeviceWidth": 2000, // rpx 计算所支持的最大设备宽度，单位 px，默认值为 960
 		"rpxCalcBaseDeviceWidth": 375, // rpx 计算使用的基准设备宽度，设备实际宽度超出 rpx 计算所支持的最大设备宽度时将按基准宽度计算，单位 px，默认值为 375

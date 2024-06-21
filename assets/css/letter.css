@@ -1,0 +1,1496 @@
+.head {
+	display: flex;
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 70rpx;
+	z-index: 999;
+}
+
+.green_back {
+	position: absolute;
+	left: 3%;
+	top: 50%;
+	margin-top: -26rpx;
+	margin-left: 16rpx;
+	z-index: 999;
+}
+
+.green_back_img {
+	width: 34rpx;
+	height: 34rpx;
+}
+
+.box {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	/* width: 100%;
+	height: 100%; */
+	perspective: 1000;
+}
+
+.green_add {
+	position: absolute;
+	right: 4%;
+	bottom: 5%;
+	z-index: 999;
+	transform: perspective(1000px) translate3d(0, 0, 0) scaleX(-1);
+}
+
+.green_back_left {
+	position: absolute;
+	left: 4%;
+	bottom: 5%;
+	z-index: 999;
+}
+
+.buttonA {
+	position: absolute;
+	right: 5%;
+	bottom: 6%;
+	z-index: 999;
+}
+
+.green_back_img1 {
+	width: 60rpx;
+	height: 60rpx;
+	animation: buttonAShow 2s 1 linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes buttonAShow {
+	0% {
+		transform: translateX(100%);
+		transform: scale(50%);
+		opacity: 1;
+	}
+
+	100% {
+		transform: translateX(150%);
+		transform: scale(120%);
+		opacity: 0;
+	}
+}
+
+.letterStarDown {
+	position: absolute;
+	left: 25%;
+	top: 24%;
+	z-index: 100;
+
+}
+
+.letterStar1 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50rpx;
+	height: 50rpx;
+	animation: letterStar1 2s infinite;
+}
+
+.letterStar2 {
+	position: absolute;
+	left: 100rpx;
+	top: 20rpx;
+	width: 50rpx;
+	height: 50rpx;
+	animation: letterStar2 2s infinite;
+}
+
+.letterStar3 {
+	position: absolute;
+	left: 30rpx;
+	top: 150rpx;
+	width: 50rpx;
+	height: 50rpx;
+	animation: letterStar3 2s infinite;
+}
+
+.letterStar4 {
+	position: absolute;
+	left: -10rpx;
+	top: 80rpx;
+	width: 50rpx;
+	height: 50rpx;
+	animation: letterStar2 2s infinite;
+}
+
+.letterStar5 {
+	position: absolute;
+	left: 70rpx;
+	top: 90rpx;
+	width: 50rpx;
+	height: 50rpx;
+	animation: letterStar3 2s infinite;
+}
+
+@keyframes letterStar1 {
+	0% {
+		opacity: 0;
+	}
+
+	21% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes letterStar2 {
+	0% {
+		opacity: 0;
+	}
+
+	31% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes letterStar3 {
+	0% {
+		opacity: 0;
+	}
+
+	51% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+.position-a-100-0 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.letterBigALeft {
+	width: 20%;
+	height: 50%;
+	position: fixed;
+	top: 18%;
+	left: 18%;
+	z-index: 2;
+}
+
+.directoryShow {
+	animation: directoryShow 2s 1 linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes directoryShow {
+	0% {
+		opacity: 0;
+	}
+
+	99% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.wh-120 {
+	width: 120%;
+	height: 120%;
+}
+
+.letterBigN {
+	width: 120%;
+	height: 120%;
+}
+
+.stage_bg2 {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.letterBigARight {
+	width: 20%;
+	height: 50%;
+	position: fixed;
+	top: 18%;
+	right: 23%;
+	z-index: 2;
+}
+
+.letterBigALeft1 {
+	width: 20%;
+	height: 50%;
+	position: absolute;
+	left: 25%;
+	top: 10%;
+	/* z-index: 2; */
+}
+
+
+
+
+
+.letterTextBoxX {
+	position: absolute;
+	bottom: 9%;
+	left: 37%;
+	height: 120rpx;
+	width: 190rpx;
+	display: flex;
+	font-size: 60rpx;
+}
+
+.letterTextHead {
+	height: 120rpx;
+	/* 设置容器高度 */
+	line-height: 120rpx;
+	text-align: center;
+	font-family: Poppins;
+}
+
+.letterTextHeadX {}
+
+.letterText {
+	/* background: #aaffff; */
+	height: 120rpx;
+	/* 设置容器高度 */
+	line-height: 120rpx;
+	font-family: Poppins;
+}
+
+.four-lines {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	/* 设置行高，可以根据需要调整 */
+	height: 130rpx;
+	/* 设置容器高度 */
+	width: 300rpx;
+	position: absolute;
+	bottom: 7%;
+	left: 35%;
+}
+
+.four-lines::before,
+.four-lines-helper1,
+.four-lines-helper2,
+.four-lines::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	border-top: 1px dashed #000;
+	/* 设置虚线样式和颜色 */
+}
+
+
+.four-lines::before {
+	top: 20%;
+	/* 上辅助线位置 */
+}
+
+.four-lines-helper1 {
+	top: 40%;
+}
+
+.four-lines-helper2 {
+	top: 60%;
+}
+
+.four-lines::after {
+	bottom: 20%;
+	/* 下辅助线位置 */
+}
+
+/* .angryBox {
+	width: 100%;
+	height: 70%;
+} */
+
+.hamburgH1 {
+	width: 30%;
+	height: 100%;
+	position: absolute;
+	left: 35%;
+}
+
+/*N*/
+.flex-3-2 {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 70%;
+	/* padding: 0 5%; */
+}
+
+.w30h50 {
+	width: 30%;
+	height: 50%;
+}
+
+/* A */
+.letterBigALeftA {
+	width: 20%;
+	height: 50%;
+	position: absolute;
+	top: 20%;
+	z-index: 2;
+	animation: directoryShowA 2s 1 linear;
+	animation-fill-mode: forwards;
+}
+
+.antBox1A {
+
+	width: 50rpx;
+	height: 38rpx;
+	z-index: -1;
+	transform: rotateY(180deg);
+	animation: antShow1A 4s 1 linear;
+	animation-fill-mode: forwards;
+}
+
+.antBox2A {
+	
+	width: 50rpx;
+	height: 38rpx;
+	z-index: -1;
+	transform: rotateY(180deg);
+	animation: antShow2A 4s 1 linear;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes directoryShowA {
+	0% {
+		left: -25%;
+
+	}
+
+	100% {
+		left: 25%;
+	}
+}
+
+@keyframes antShow1A {
+	0% {
+		transform: rotateY(180deg);
+		left: 10rpx;
+	}
+
+	50% {
+		transform: rotateY(180deg);
+		left: 10rpx;
+	}
+
+	51% {
+		transform: rotateY(0);
+		left: 10rpx;
+	}
+
+	100% {
+		transform: rotateY(0);
+		left: -3500rpx;
+	}
+}
+
+@keyframes antShow2A {
+	0% {
+		transform: rotateY(180deg);
+		right: 10rpx;
+	}
+
+	50% {
+		transform: rotateY(180deg);
+		right: 10rpx;
+	}
+
+	51% {
+		transform: rotateY(0);
+		right: 10rpx;
+	}
+
+	100% {
+		transform: rotateY(0);
+		right: 350rpx;
+	}
+}
+
+.letterBigARightA {
+	width: 20%;
+	height: 50%;
+	position: absolute;
+	top: 20%;
+	z-index: 2;
+	animation: directoryShow1A 12s 1 linear;
+	animation-fill-mode: forwards;
+}
+
+.antBox3A {
+
+	width: 50rpx;
+	height: 38rpx;
+	z-index: -1;
+	animation: antShow3A 18s 1 linear;
+	animation-fill-mode: forwards;
+
+}
+
+.antBox4A {
+
+	width: 50rpx;
+	height: 38rpx;
+	z-index: -1;
+	animation: antShow4A 18s 1 linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes directoryShow1A {
+	0% {
+		right: -25%;
+	}
+
+	50% {
+		right: -25%;
+	}
+
+	75% {
+		right: 25%;
+	}
+
+	100% {
+		right: 25%;
+	}
+}
+
+@keyframes antShow3A {
+	0% {
+		transform: rotateY(0);
+		left: 10rpx;
+	}
+
+	50% {
+		transform: rotateY(0);
+		left: 10rpx;
+	}
+
+	51% {
+		transform: rotateY(180deg);
+		left: 10rpx;
+	}
+
+	75% {
+		transform: rotateY(180deg);
+		left: 350rpx;
+	}
+
+	100% {
+		transform: rotateY(180deg);
+		left: 350rpx;
+	}
+}
+
+@keyframes antShow4A {
+	0% {
+		transform: rotateY(0);
+		right: 10rpx;
+	}
+
+	50% {
+		transform: rotateY(0);
+		right: 10rpx;
+	}
+
+	51% {
+		transform: rotateY(180deg);
+		right: 10rpx;
+	}
+
+	75% {
+		transform: rotateY(180deg);
+		right: -350rpx;
+	}
+
+	100% {
+		transform: rotateY(180deg);
+		right: -350rpx;
+	}
+}
+
+/* 游戏a */
+.easydragBox {
+	position: absolute;
+	width: 46%;
+	height: 60%;
+	margin-left: 28%;
+	margin-top: 6%;
+	z-index: 888;
+
+
+}
+
+.easydragitem {
+	position: absolute;
+	width: 50rpx;
+	height: 50rpx;
+	z-index: 888;
+}
+
+.easydragmov {
+	width: 50rpx;
+	height: 50rpx;
+	z-index: 888;
+}
+
+.appleBigA1 {
+	width: 40rpx;
+	height: 40rpx;
+	position: absolute;
+	top: 18%;
+	left: 36%;
+	z-index: 250;
+}
+
+.appleBigA2 {
+	width: 40rpx;
+	height: 40rpx;
+	position: absolute;
+	top: 20%;
+	left: 58%;
+	z-index: 250;
+}
+
+.appleBigA3 {
+	width: 40rpx;
+	height: 40rpx;
+	position: absolute;
+	top: 10%;
+	left: 45%;
+	z-index: 250;
+}
+
+.appleBigA4 {
+	width: 40rpx;
+	height: 40rpx;
+	position: absolute;
+	top: 22%;
+	left: 43%;
+	z-index: 250;
+}
+
+.appleBigA5 {
+	width: 40rpx;
+	height: 40rpx;
+	position: absolute;
+	top: 28%;
+	left: 50%;
+	z-index: 250;
+}
+
+.appleBigA6 {
+	width: 40rpx;
+	height: 40rpx;
+	position: absolute;
+	top: 16%;
+	left: 52%;
+	z-index: 250;
+}
+
+.appleBigA7 {
+	width: 40rpx;
+	height: 40rpx;
+	position: absolute;
+	top: 34%;
+	left: 40%;
+	z-index: 250;
+}
+
+.appleBigA8 {
+	width: 40rpx;
+	height: 40rpx;
+	position: absolute;
+	top: 34%;
+	left: 57%;
+	z-index: 250;
+}
+
+.appleTreeImg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+}
+
+.treeBg_treeImg {
+	position: absolute;
+	left: 0;
+	bottom: 10%;
+	width: 100%;
+	height: 100%;
+	z-index: 200;
+}
+
+.pretextLeft {
+	position: absolute;
+	left: 20%;
+	bottom: 10%;
+	width: 160rpx;
+	height: 160rpx;
+	z-index: 200;
+
+
+}
+
+.pretextRight {
+	position: absolute;
+	right: 20%;
+	bottom: 10%;
+	width: 160rpx;
+	height: 160rpx;
+	z-index: 200;
+
+
+}
+
+/* B */
+.letterBigALeftB {
+	width: 20%;
+	height: 50%;
+	position: absolute;
+	left: 25%;
+	z-index: 2;
+	animation: directoryShowB 2s 1 linear;
+	animation-fill-mode: forwards;
+}
+
+.antBox1B {
+	
+	width: 50rpx;
+	height: 38rpx;
+	z-index: -1;
+	transform: rotateY(180deg);
+	animation: antShow1B 4s 1 linear;
+	animation-fill-mode: forwards;
+
+}
+
+.antBox2B {
+	
+	width: 50rpx;
+	height: 38rpx;
+	z-index: -1;
+	transform: rotateY(180deg);
+	animation: antShow2B 4s 1 linear;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes directoryShowB {
+	0% {
+		top: -20%;
+
+	}
+
+	100% {
+		top: 20%;
+	}
+}
+
+@keyframes antShow1B {
+	0% {
+		transform: rotateY(180deg);
+		left: 10rpx;
+	}
+
+	50% {
+		transform: rotateY(180deg);
+		left: 10rpx;
+	}
+
+	51% {
+		transform: rotateY(0);
+		left: 10rpx;
+	}
+
+	100% {
+		transform: rotateY(0);
+		left: -3500rpx;
+	}
+}
+
+@keyframes antShow2B {
+	0% {
+		transform: rotateY(180deg);
+		right: 10rpx;
+	}
+
+	50% {
+		transform: rotateY(180deg);
+		right: 10rpx;
+	}
+
+	51% {
+		transform: rotateY(0);
+		right: 10rpx;
+	}
+
+	100% {
+		transform: rotateY(0);
+		right: 350rpx;
+	}
+}
+
+.letterBigARightB {
+	width: 20%;
+	height: 50%;
+	position: absolute;
+	right: 25%;
+	z-index: 2;
+	animation: directoryShow1B 8s 1 linear;
+	animation-fill-mode: forwards;
+
+
+}
+
+.antBox3B {
+	position: absolute;
+	
+	width: 50rpx;
+	height: 38rpx;
+	z-index: -1;
+	animation: antShow3B 12s 1 linear;
+	animation-fill-mode: forwards;
+
+}
+
+.antBox4B {
+	position: absolute;
+	
+	width: 50rpx;
+	height: 38rpx;
+	z-index: -1;
+	animation: antShow4B 12s 1 linear;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes directoryShow1B {
+	0% {
+		top: -58%;
+	}
+
+	50% {
+		top: -58%;
+	}
+
+	75% {
+		top: 20%;
+	}
+
+	100% {
+		top: 20%;
+	}
+}
+
+@keyframes antShow3B {
+	0% {
+		transform: rotateY(0);
+		left: 10rpx;
+	}
+
+	50% {
+		transform: rotateY(0);
+		left: 10rpx;
+	}
+
+	51% {
+		transform: rotateY(180deg);
+		left: 10rpx;
+	}
+
+	75% {
+		transform: rotateY(180deg);
+		left: 350rpx;
+	}
+
+	100% {
+		transform: rotateY(180deg);
+		left: 350rpx;
+	}
+}
+
+@keyframes antShow4B {
+	0% {
+		transform: rotateY(0);
+		right: 10rpx;
+	}
+
+	50% {
+		transform: rotateY(0);
+		right: 10rpx;
+	}
+
+	51% {
+		transform: rotateY(180deg);
+		right: 10rpx;
+	}
+
+	75% {
+		transform: rotateY(180deg);
+		right: -350rpx;
+	}
+
+	100% {
+		transform: rotateY(180deg);
+		right: -350rpx;
+	}
+}
+
+
+.easydragitemB {
+	position: absolute;
+	left: 40%;
+	top: 10rpx;
+	width: 60rpx;
+	height: 120rpx;
+	animation: easydragitemB 2.5s 1 linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes easydragitemB {
+	0% {
+		top: 400rpx
+	}
+
+	100% {
+		top: 50rpx
+	}
+}
+
+.easydragmovB {
+	width: 60rpx;
+	height: 120rpx;
+	z-index: 999;
+}
+
+.treeBg_treeImg {
+	position: absolute;
+	left: 0;
+	bottom: 10%;
+	// margin-left: -225rpx;
+	width: 100%;
+	height: 100%;
+	z-index: 200;
+}
+
+.pretextLeftB {
+	position: absolute;
+	left: 10%;
+	bottom: 10%;
+	width: 160rpx;
+	height: 160rpx;
+	z-index: 200;
+
+}
+
+.pretextRightB {
+	position: absolute;
+	right: 10%;
+	bottom: 10%;
+	width: 160rpx;
+	height: 160rpx;
+	z-index: 200;
+}
+
+/* C */
+.letterBigALeftC {
+	width: 20%;
+	height: 50%;
+	position: absolute;
+	top: 20%;
+	z-index: 2;
+	animation: directoryShowC 2s 1 linear;
+	animation-fill-mode: forwards;
+}
+
+.antBox1C {
+	position: absolute;
+	left: 30rpx;
+	bottom: 10rpx;
+	width: 80rpx;
+	height: 55rpx;
+	z-index: -1;
+	transform: rotateY(180deg);
+	animation: antShow1C 4s 1 linear;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes directoryShowC {
+	0% {
+		left: -25%;
+
+	}
+
+	100% {
+		left: 25%;
+	}
+}
+
+@keyframes antShow1C {
+	0% {
+		transform: rotateY(180deg);
+		left: -30rpx;
+	}
+
+	50% {
+		transform: rotateY(180deg);
+		left: -30rpx;
+	}
+
+	51% {
+		transform: rotateY(0);
+		left: -30rpx;
+	}
+
+	100% {
+		transform: rotateY(0);
+		left: -350rpx;
+	}
+}
+
+.letterBigARightC {
+	width: 20%;
+	height: 50%;
+	position: absolute;
+	top: 20%;
+	z-index: 2;
+	animation: directoryShow1C 8s 1 linear;
+	animation-fill-mode: forwards;
+}
+
+.antBox3C {
+	position: absolute;
+	left: 20rpx;
+	bottom: 10rpx;
+	width: 50rpx;
+	height: 38rpx;
+	z-index: -1;
+
+	animation: antShow3C 12s 1 linear;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes directoryShow1C {
+	0% {
+		right: -25%;
+	}
+
+	50% {
+		right: -25%;
+	}
+
+	75% {
+		right: 25%;
+	}
+
+	100% {
+		right: 25%;
+	}
+}
+
+@keyframes antShow3C {
+	0% {
+		transform: rotateY(0);
+		left: 10rpx;
+	}
+
+	50% {
+		transform: rotateY(0);
+		left: 10rpx;
+	}
+
+	51% {
+		transform: rotateY(180deg);
+		left: 10rpx;
+	}
+
+	75% {
+		transform: rotateY(180deg);
+		left: 350rpx;
+	}
+
+	100% {
+		transform: rotateY(180deg);
+		left: 350rpx;
+	}
+}
+
+/* C游戏 */
+
+
+.easydragitemC {
+	position: absolute;
+	width: 80rpx;
+	height: 80rpx;
+	z-index: 888;
+}
+
+.easydragitemBgC {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 80rpx;
+	height: 80rpx;
+	z-index: 666;
+}
+
+.easydragAnsC {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100rpx;
+
+}
+
+.easydragAnsTopC {
+	position: relative;
+	width: 56rpx;
+	height: 30rpx;
+	z-index: 888;
+	animation: easydragAnsTopC 4s 1 linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes easydragAnsTopC {
+	0% {
+		height: 30rpx;
+	}
+
+	50% {
+		height: 120rpx;
+	}
+
+	100% {
+		height: 0rpx;
+	}
+}
+
+.easydragItemC {
+	width: 86rpx;
+	height: 80rpx;
+	z-index: 888;
+}
+
+.easydragitemBgC {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 86rpx;
+	height: 80rpx;
+	z-index: 666;
+}
+
+/* D */
+.letterBigALeftD {
+	width: 20%;
+	height: 50%;
+	position: absolute;
+	top: 18%;
+	left: 18%;
+	z-index: 2;
+	animation: directoryShowD 2s 1 linear;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes directoryShowD {
+	0% {
+		opacity: 0;
+	}
+
+	99% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.stage_bg1D {
+	position: absolute;
+	top: 0%;
+	width: 40%;
+	animation: stage_bg1D 2s 1 linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes stage_bg1D {
+	0% {
+		left: 30%;
+		height: 50%;
+	}
+
+	100% {
+		left: 10%;
+		height: 72%;
+	}
+}
+
+.stage_bg2D {
+	position: absolute;
+	top: 0%;
+	width: 40%;
+	animation: stage_bg2D 4s 1 linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes stage_bg2D {
+	0% {
+		right: 30%;
+		height: 50%;
+		opacity: 0;
+	}
+
+	50% {
+		right: 30%;
+		height: 50%;
+		opacity: 0;
+	}
+
+	51% {
+		right: 30%;
+		height: 50%;
+		opacity: 1;
+	}
+
+	100% {
+		right: 10%;
+		height: 72%;
+	}
+}
+
+.letterBigARightD {
+	width: 20%;
+	height: 50%;
+	position: absolute;
+	top: 18%;
+	right: 23%;
+	z-index: 2;
+	animation: directoryShow1D 4s 1 linear;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes directoryShow1D {
+	0% {
+		opacity: 0;
+	}
+
+	99% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+/* D游戏 */
+
+.answerBox {
+	width: 100%;
+	height: 50%;
+	position: relative;
+	top: 25%;
+}
+
+.answerText {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	font-size: 150rpx;
+	color: #fff;
+	animation: letterStar3 2s infinite;
+}
+
+.answerItem {
+	width: 100%;
+	height: 200rpx;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -100rpx;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.answerItem_one_show1 {
+	animation: answerItemFalse 2s 1 linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes answerItemFalse {
+	0% {
+		transform: scale(100%);
+	}
+
+	100% {
+		transform: scale(150%);
+	}
+}
+
+.answerItem_one_show2 {
+	background: deeppink;
+}
+
+.answerItem_one {
+	position: relative;
+	width: 100rpx;
+	height: 100rpx;
+	animation: answerItem 2s 1 linear;
+	animation-fill-mode: forwards;
+
+}
+
+.answerItem_one_border {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 5rpx;
+	margin-left: -10rpx;
+	margin-top: -10rpx;
+	animation: huerotate 6s infinite linear;
+	border: 10rpx solid;
+	border-image: linear-gradient(45deg, gold, deeppink) 1;
+
+	clip-path: inset(0px round 10px);
+	filter: hue-rotate(360deg);
+	z-index: 50;
+}
+
+.answerItem_oneImg {
+	width: 90rpx;
+	height: 90rpx;
+	position: absolute;
+	margin-left: 5rpx;
+	margin-top: 5rpx;
+	z-index: 100;
+}
+
+@keyframes huerotate {
+	0% {
+		filter: hue-rotate(0deg);
+	}
+
+	100% {
+		filter: hue-rorate(360deg);
+	}
+}
+
+@keyframes answerItem {
+	0% {
+		transform: rotateY(0deg);
+	}
+
+	50% {
+		transform: rotateY(180deg);
+	}
+
+	100% {
+		transform: rotateY(0deg);
+	}
+}
+
+@keyframes answerItems {
+	0% {
+		transform: rotateY(0deg);
+	}
+
+	50% {
+		transform: rotateY(180deg);
+	}
+
+	100% {
+		transform: rotateY(0deg);
+	}
+}
+
+
+/* o */
+.antImgO1 {
+	position: absolute;
+	width: 220rpx;
+	height: 220rpx;
+	z-index: 100;
+	animation: antShowO1 2s 1 linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes antShowO1 {
+	0% {
+		left: 140rpx;
+		top: -220rpx;
+		opacity: 1;
+	}
+
+	99% {
+		left: 140rpx;
+		top: 200rpx;
+		opacity: 1;
+	}
+
+	100% {
+		left: 140rpx;
+		top: 200rpx;
+		opacity: 0;
+	}
+}
+
+.antImgO2 {
+	position: absolute;
+
+	width: 220rpx;
+	height: 220rpx;
+	z-index: 100;
+	animation: antShowO2 4s 1 linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes antShowO2 {
+	0% {
+		right: 140rpx;
+		top: -220rpx;
+		opacity: 1;
+	}
+
+	50% {
+		right: 140rpx;
+		top: -220rpx;
+		opacity: 1;
+	}
+
+	99% {
+		right: 140rpx;
+		top: 200rpx;
+		opacity: 1;
+	}
+
+	100% {
+		right: 140rpx;
+		top: 200rpx;
+		opacity: 0;
+	}
+}
+
+/* 视频 */
+.bgview {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	margin-left: -300rpx;
+	width: 600rpx;
+	height: 400rpx;
+}
+
+/* 首页字母跳动 */
+.jumpTopBottom-50-1 {
+	animation: topBottom-50 1s infinite;
+	/* animation-fill-mode:forwards; */
+}
+
+@keyframes topBottom-50 {
+	0% {
+		top: 0rpx;
+
+	}
+
+	50% {
+		top: -10rpx;
+
+	}
+
+	100% {
+		top: 0rpx;
+	}
+}
+
+.jumpTopBottom-50-2 {
+	animation: TopBottom-50-2 2s infinite;
+	/* animation-fill-mode:forwards; */
+}
+
+@keyframes TopBottom-50-2 {
+	0% {
+		top: 0rpx;
+
+	}
+
+	50% {
+		top: -10rpx;
+
+	}
+
+	100% {
+		top: 0rpx;
+	}
+}
+
+.jumpTopBottom--50-2 {
+	animation: TopBottom--50-2 2s infinite;
+	/* animation-fill-mode:forwards; */
+}
+
+@keyframes TopBottom--50-2 {
+	0% {
+		top: 0rpx;
+
+	}
+
+	50% {
+		top: 10rpx;
+
+	}
+
+	100% {
+		top: 0rpx;
+	}
+}
+
+
+.scale100-150{
+	animation: scale100-150 1s 1 linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes scale100-150 {
+	0% {
+		transform: scale(100%);
+	}
+	50% {
+		transform: scale(150%);
+	}
+	100% {
+		transform: scale(100%);
+	}
+}

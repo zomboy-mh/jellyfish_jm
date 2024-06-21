@@ -1,9 +1,9 @@
 <template>
 	<view class="content">
-		<view class="green_back display-flex" @tap="jump()">
+		<view class="green_back1 display-flex" @tap="jump()">
 			<image class="green_back_img" :src="imageUrl + 'green_back.png'" mode=""></image>
 		</view>
-		<image class="bgview" :src="imageUrl + 'book_guide_bg .png'" mode=""></image>
+		<image class="bgview1" :src="imageUrl + 'book_guide_bg .png'" mode=""></image>
 		<view class="body">
 			<image class="body_bg" :src="imageUrl + 'guide_center.png'" mode=""></image>
 			<view class="book_left">
@@ -157,7 +157,8 @@
 	.content{
 		width: 100%;
 		height: 100%;
-		.green_back{
+		position: fixed;
+		.green_back1{
 			position: absolute;
 			left: 2%;
 			top: 2%;
@@ -167,7 +168,7 @@
 				height: 40rpx;
 			}
 		}
-		.bgview{
+		.bgview1{
 			width: 100%;
 			height: 100%;
 			position: absolute;

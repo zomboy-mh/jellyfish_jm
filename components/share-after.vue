@@ -11,11 +11,7 @@
 						小朋友，恭喜你完成了。
 					</view>
 					<view class="star_move z-index999">
-						<!-- <image class="yellowstar1" :src="imageUrl + 'yellowstar1.png'"></image>
-						<image class="redstar1" :src="imageUrl + 'redstar1.png'"></image> -->
-						<image class="yellowstar1" :src="imageUrl + 'gradeSun1.gif'">
-							
-						</image>
+						<image class="yellowstar1" :src="imageUrl + 'gradeSun1.gif'"></image>
 						<view class="gradeSum font-28">100</view>
 					</view>
 					<view style="bottom: 40rpx;" class=" width text-center position-a font-20 font-bold cl-0B0B4B z-index999">
@@ -24,19 +20,11 @@
 					<image class="wh" :src="imageUrl + 'share1.png'" mode=""></image>
 				</view>
 				<view class="share_but flex justify-center">
-					<image @tap="jump()" class="share_but_img" :src="imageUrl + 'home.png'" mode=""></image>
-					<image @tap="jump()" class="share_but_img padding-left-20" :src="imageUrl + 'refresh.png'"
-						mode=""></image>
-					<image @tap="jump()" class="share_but_img padding-lr-20" :src="imageUrl + 'shut.png'"
-						mode="">
-					</image>
-					<image @tap="jump()" class="share_but_img " :src="imageUrl + 'share_wx.png'"
-						mode="">
-					</image>
-					<image @tap="jump()" class="share_but_img padding-left-20" :src="imageUrl + 'share_pyq.png'"
-						mode="">
-					</image>
-					
+					<!-- <image @tap="jump()" class="share_but_img" :src="imageUrl + 'home.png'" mode=""></image> -->
+					<!-- <image @tap="jump()" class="share_but_img padding-left-20" :src="imageUrl + 'refresh.png'" mode=""></image> -->
+					<image @tap="jump()" class="share_but_imgs " :src="imageUrl + 'shut.png'" mode=""> </image>
+					<image @tap="jump()" class="share_but_img" :src="imageUrl + 'share_wx.png'" mode=""> </image>
+					<image @tap="jump()" class="share_but_img padding-left-20" :src="imageUrl + 'share_pyq.png'" mode=""> </image>
 				</view>
 			</view>
 		</view>
@@ -44,12 +32,26 @@
 </template>
 
 <script>
+	import {imageUrl,formalUrl} from '../config/index.js'
 	export default {
 		name:"share-after",
+		props: {
+			
+		},
 		data() {
 			return {
-				
+				imageUrl: imageUrl,
+				formalUrl:formalUrl,
+				preserveIf:false
 			};
+		},
+		methods: {
+			jump(){
+				this.preserveIf = false;
+				uni.reLaunch({
+						url: 'letter'
+				})
+			}
 		}
 	}
 </script>
@@ -159,8 +161,15 @@
 				
 					.share_but {
 						padding-top: 4rpx;
-				
+						position: relative;
 						.share_but_img {
+							width: 48rpx;
+							height: 50rpx;
+						}
+						.share_but_imgs{
+							position: absolute;
+							right: -50rpx;
+							top:-300rpx;
 							width: 48rpx;
 							height: 50rpx;
 						}

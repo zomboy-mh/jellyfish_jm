@@ -187,8 +187,6 @@
 </script>
 
 <style lang="scss" scoped>
- @import "../../assets/css/variable";
-  @import "../../assets/css/mixin";
 
   .detail {
     position: fixed;
@@ -396,8 +394,6 @@
         .phonueft {
           height: 100rpx;
           line-height: 100rpx;
-          /*width: 50px;*/
-          @include font_size($font_medium);
           text-align: center;
           color: #000000;
         }

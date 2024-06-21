@@ -34,6 +34,38 @@ export function voiceStart(url) {
 	});
 }
 
+export const letterAudio = uni.createInnerAudioContext();
+
+export function letterVoiceStart(url) {
+	return new Promise(function(resolve, reject) {
+		//实例化声音
+		letterAudio.autoplay = true;
+		letterAudio.src = url; //音频地址
+
+		// console.log("======url====="+url)
+		letterAudio.play(); //执行播放
+		letterAudio.onPause(res => {
+			
+			resolve(res);
+		});
+		letterAudio.onEnded(res => {
+			if(res!==undefined){
+				resolve(res);
+			}
+			
+		});
+
+		letterAudio.onError((err) => {
+			resolve('onError');
+			console.log(err)
+			// uni.showToast({
+			// 	title: '音频播放失败',
+			// 	duration: 1000
+			// });
+		});
+	});
+}
+
 export function unloginEnCode(data) {
 	let passcode = '1:@,2:$,3:-'
 	let stra = passcode.split(",")

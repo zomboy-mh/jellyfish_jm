@@ -1,44 +1,47 @@
 <template>
 	<view class="content">
+		<view class="loading" v-if="loading">
+			<image class="loading_img" :src="imageUrl + 'loading.gif'" mode=""></image>
+		</view>
 		<view class="user">
 			<view class="user_head" @tap="getUserInfo">
 				<image class="wh" style="border-radius: 23rpx;" :src="userImg" mode=""></image>
 			</view>
 			<!-- <view class="font-14 font-bold margin-top-10 margin-left-10" ></view> -->
 		</view>
-		<image class="bgview" :src="imageUrl + 'home_bg_'+month+'.png'" mode=""></image>
+		<image class="bgview1" :src="imageUrl + 'home_bg_'+month+'.png'" mode="aspectFill"></image>
 		<image class="razkids_tips" :src="imageUrl + 'razkids_tips.png'" mode=""></image>
 		<view class="home_head">
 			<view class="headTipsBox">
-				<image class="headTips" style="width: 44rpx;" :src="imageUrl + 'letter_logo4.png'" mode="" @tap="jumpEar(0)"></image>
+				<image class="headTips" style="width: 44rpx;" :src="imageUrl + 'letter_logo4.png'" mode="aspectFill" @tap="jumpEar(0)"></image>
 				<view class="headTipsTxt">电影院</view>
 			</view>
 			<view class="headTipsBox">
-				<image class="headTips" style="width: 49rpx;" :src="imageUrl + 'letter_logo5.png'" mode="" @tap="jumpEar(1)"></image>
+				<image class="headTips" style="width: 49rpx;" :src="imageUrl + 'letter_logo5.png'" mode="aspectFill" @tap="jumpEar(1)"></image>
 				<view class="headTipsTxt">磨耳朵</view>
 			</view>
 			<view class="headTipsBox">
-				<image class="headTips" style="width: 49rpx;" :src="imageUrl + 'letter_logo6.png'" mode="" @tap="jumpEar()"></image>
+				<image class="headTips" style="width: 49rpx;" :src="imageUrl + 'letter_logo6.png'" mode="aspectFill" @tap="jumpEar()"></image>
 				<view class="headTipsTxt">单词闯关</view>
 			</view>
 			<view class="headTipsBox">
-				<image class="headTips" style="width: 48rpx;" :src="imageUrl + 'letter_logo7.png'" mode="" @tap="jumpEar()"></image>
+				<image class="headTips" style="width: 48rpx;" :src="imageUrl + 'letter_logo7.png'" mode="aspectFill" @tap="jumpEar()"></image>
 				<view class="headTipsTxt">夺星计划</view>
 			</view>
 			<view class="headTipsBox">
-				<image class="headTips" style="width: 48rpx;" :src="imageUrl + 'letter_logo8.png'" mode="" @tap="jumpEar(4)"></image>
+				<image class="headTips" style="width: 48rpx;" :src="imageUrl + 'letter_logo8.png'" mode="aspectFill" @tap="jumpEar(4)"></image>
 				<view class="headTipsTxt">定级测评</view>
 			</view>
 			<view class="headTipsBox">
-				<image class="headTips" style="width: 40rpx;" :src="imageUrl + 'letter_logo9.png'" mode="" @tap="jumpEar(5)"></image>
+				<image class="headTips" style="width: 40rpx;" :src="imageUrl + 'letter_logo9.png'" mode="aspectFill" @tap="jumpEar(5)"></image>
 				<view class="headTipsTxt">扩展训练</view>
 			</view>
 			<view class="headTipsBox">
-				<image class="headTips" style="width: 40rpx;" :src="imageUrl + 'letter_logo10.png'" mode="" @tap="jumpEar(6)"></image>
+				<image class="headTips" style="width: 40rpx;" :src="imageUrl + 'letter_logo10.png'" mode="aspectFill" @tap="jumpEar(6)"></image>
 				<view class="headTipsTxt">打卡阅读</view>
 			</view>
 			<view class="headTipsBox">
-				<image class="headTips" style="width: 40rpx;":src="imageUrl + 'letter_logo11.png'" mode="" @tap="shareWechat()"></image>
+				<image class="headTips" style="width: 40rpx;":src="imageUrl + 'letter_logo11.png'" mode="aspectFill" @tap="shareWechat()"></image>
 				<view class="headTipsTxt">阅读指导</view>
 			</view>
 			<!-- <image class="headTips" :src="imageUrl + 'letter_logo4.png'" mode=""></image> -->
@@ -121,7 +124,6 @@
 								</view>
 							</view>
 						</view>
-		
 						<view class="cnt_box" style="padding-top: 10rpx;padding-bottom: 35rpx;">
 							<view class="font-13 font-weight5">学习英语时间:</view>
 							<view class="dropdown-view1">
@@ -165,6 +167,7 @@
 			return {
 				imageUrl: imageUrl,
 				formalUrl:formalUrl,
+				loading:true,
 				isModel:false,
 				startX:0,
 				endX:0,
@@ -204,6 +207,7 @@
 				}).then((res)=>{
 					this.bookBox = res.data.pageList;
 					this.itemList = res.data.itemList;
+					this.loading = false
 					 console.log("获取书本列表",res);
 				})
 			},
@@ -431,7 +435,7 @@
 				margin-top: 2rpx;
 			}
 		}
-		.bgview{
+		.bgview1{
 			width: 100%;
 			height: 100%;
 			position: absolute;

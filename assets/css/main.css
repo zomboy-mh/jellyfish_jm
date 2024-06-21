@@ -978,6 +978,31 @@ image {
 .bg-00AF46 {
 	background: #00AF46;
 }
+/*a-z*/
+.bg-ffbedb {
+	background: #ffbedb;
+}
+.bg-aaff7f{
+	background: #aaff7f;
+}
+.bg-00aa00{
+	background: #00aa00;
+}
+.bg-0055ff{
+	background: #0055ff;
+}
+.bg-55aaff{
+	background: #55aaff;
+}
+.bg-55aa7f{
+	background: #55aa7f;
+}
+.bg-aaaaff{
+	background: #aaaaff;
+}
+.bg-ffaa00{
+	background: #ffaa00;
+}
 .bg-0D79DE {
 	background: #0D79DE;
 	color: #FFFFFF;
@@ -1082,8 +1107,17 @@ image {
 .z-index9 {
 	z-index: 999;
 }
+.z-index900 {
+	z-index: 900;
+}
+.z-index8 {
+	z-index: 888;
+}
 .z-index6 {
 	z-index: 666;
+}
+.z-index100{
+	z-index: 100;
 }
 .z-index60 {
 	z-index: 60;
@@ -1105,3 +1139,21 @@ image {
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
+.loading{
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background: #FFFFFF;
+			z-index: 999;
+}
+.loading_img{
+			width: 200rpx;
+			height: 200rpx;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-top: -100rpx;
+			margin-left: -100rpx;
+		}

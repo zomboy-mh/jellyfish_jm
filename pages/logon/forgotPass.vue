@@ -179,9 +179,6 @@
 </script>
 
 <style scoped lang="scss">
-  @import "../../assets/css/variable";
-  @import "../../assets/css/mixin";
-  @import "../../assets/css/main";
   .phoneBox{
     .phoneLeft{
       text-align: center;
